@@ -1,0 +1,28 @@
+{
+  "listen_host": "0.0.0.0",
+  "listen_port": 8080,
+  "backend_servers": [
+    {
+      "host": "server1.example.com",
+      "port": 9001,
+      "weight": 1,
+      "max_connections": 500
+    },
+    {
+      "host": "server2.example.com",
+      "port": 9001,
+      "weight": 1,
+      "max_connections": 500
+    },
+    {
+      "host": "server3.example.com",
+      "port": 9001,
+      "weight": 1,
+      "max_connections": 500
+    }
+  ],
+  "algorithm": "least_connections",
+  "health_check_interval": 15,
+  "connection_timeout": 60,
+  "max_concurrent_connections": 5000
+}
