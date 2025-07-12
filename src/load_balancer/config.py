@@ -3,7 +3,7 @@ Layer 4 Load Balancer Configuration
 """
 import json
 from dataclasses import dataclass
-from typing import List, Tuple
+from typing import List
 
 
 @dataclass

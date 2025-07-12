@@ -4,9 +4,8 @@ Layer 4 Load Balancer Implementation
 import asyncio
 import logging
 import signal
-import sys
 import uuid
-from typing import Dict, Optional, Tuple
+from typing import Dict, Tuple
 
 from .config import LoadBalancerConfig, DEFAULT_CONFIG
 from .algorithms import get_algorithm, LeastConnectionsAlgorithm
